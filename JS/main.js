@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded"),
+document.addEventListener("DOMContentLoaded",
 (function(e){
   var clear = document.querySelector("[data-js='ckear']");
   var number = document.querySelector("[data-js='number']");
@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded"),
   var numbersString = "";
   var calcLog = "";
 
-clear.addEventListener("click", function(e){
-  var outputClear = "";
-  numbersString = "";
-  output.textContent = outputClear;
-  e.preventDefault();
-});
+  clear.addEventListener("click", function(e){
+    var outputClear = "";
+    numbersString = "";
+    output.textContent = outputClear;
+    e.preventDefault();
+  });
 
 function setOutputText(text){
   output.textContent += text
@@ -29,7 +29,7 @@ for(var i = 0; i < number.length; i++) {
 };
 
 for (var i = 0; i < operator.length; i ++) {
-  operator[i].addEventListener("click", fucntion(e){
+  operator[i].addEventListener("click", function(e){
   operator = e.currentTarget.dataset.type;
   setOutputText(e.currentTarget.textContent);
   e.preventDefault();
@@ -61,4 +61,4 @@ equate.addEventListener("click", function(e){
 
 
 
-});
+}));
