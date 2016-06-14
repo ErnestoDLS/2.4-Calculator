@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",
 (function(e){
-  var clear = document.querySelector("[data-js='ckear']");
+  var clear = document.querySelector("[data-js='clear']");
   var number = document.querySelector("[data-js='number']");
   var output = document. querySelector("[data-js='output']");
   var operator = document.querySelector("[data-js='operator']");
@@ -58,7 +58,5 @@ equate.addEventListener("click", function(e){
   };
 
 });
-
-
 
 }));
